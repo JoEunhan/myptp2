@@ -1,0 +1,2 @@
+rootProject.name='myptp'
+include ':app'
