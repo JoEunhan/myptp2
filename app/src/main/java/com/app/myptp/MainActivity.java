@@ -25,6 +25,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,V
     @BindView(R.id.linearlayout_3) Button linearlayout3;
     @BindView(R.id.image2) Button img2;
     @BindView(R.id.calculator) Button cal;
+    @BindView(R.id.lifecycle) Button lfc;
+    @BindView(R.id.listview) Button lst;
+    @BindView(R.id.phonebook) Button phone;
 
     @BindView(R.id.mainTableLayout)
     TableLayout mainTableLayout;
@@ -38,6 +41,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,V
         linearlayout1.setOnLongClickListener(this);
         img2.setOnLongClickListener(this);
         cal.setOnLongClickListener(this);
+        lfc.setOnLongClickListener(this);
+        lst.setOnLongClickListener(this);
+        phone.setOnLongClickListener(this);
+
     }
 
 
@@ -64,6 +71,19 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,V
                 toastShow("계산기");
                 newStartActivity(CalculatorActivity.class);
                 break;
+            case R.id.lifecycle:
+                toastShow("수명주기");
+               newStartActivity(LifecycleActivity.class);
+                break;
+            case R.id.listview:
+                toastShow("list view");
+                newStartActivity(MainActivity6.class);
+                break;
+            case R.id.phonebook:
+                toastShow("phonebook");
+                newStartActivity(AddressActivity.class);
+                break;
+
         }
         return true;
     }
@@ -110,6 +130,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,V
             case R.id.calculator:
                 toastShow("계산기");
                 newStartActivity(CalculatorActivity.class);
+                break;
+            case R.id.lifecycle:
+                toastShow("수명주기");
+                newStartActivity(LifecycleActivity.class);
+                break;
+            case R.id.listview:
+                toastShow("list view");
+                newStartActivity(MainActivity6.class);
+                break;
+            case R.id.phonebook:
+                toastShow("phonebook");
+                newStartActivity(AddressActivity.class);
                 break;
         }
     }

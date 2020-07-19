@@ -94,27 +94,30 @@
     </TableRow>
     <TableRow>
         <Button
+            android:id="@+id/lifecycle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Hello World!"
+            android:text="LIFECYCLE"
             android:layout_weight="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <Button
+            android:id="@+id/listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Hello World!"
+            android:text="list view"
             android:layout_weight="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <Button
+            android:id="@+id/phonebook"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Hello World!"
+            android:text="phone book"
             android:layout_weight="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
